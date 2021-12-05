@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <h1>Rock • Paper • Scissors</h1>
+    <h2>How many rounds do you want to play?</h2>
+    <form>
+        <input class="wieOft" type="radio" id="five" name="rounds" value="5" onclick="HowMany()">
+        <label for="five">5</label>
+        <input class="wieOft" type="radio" id="ten" name="rounds" value="10" onclick="HowMany()">
+        <label for="ten">10</label>
+        <input class="wieOft" type="radio" id="fifteen" name="rounds" value="15" onclick="HowMany()">
+        <label for="fifteen">15</label>
+        <input class="wieOft" type="radio" id="twenty" name="rounds" value="20" onclick="HowMany()">
+        <label for="twenty">20</label>
+    </form>
+    <section>
+        <article>
+            <p>The Computer has</p>
+            <div id="compPoints">0</div>
+            <p>points!</p>
+        </article>
+        <article>
+            <p>You have</p>
+            <div id="userPoints">0</div>
+            <p>points!</p>
+        </article>
+    </section>
+    <article>
+        <p id="runden"></p>
+    </article>
+
+    <h2 id="stand">Let's play!</h2>
+    <div>
+        <button onclick="clickRock()" id="rock" value="0"> ROCK
+        </button>
+        <button onclick="clickPaper()" id="paper" value="1"> PAPER
+        </button>
+        <button onclick="clickScissors()" id="scissors" value="2"> SCISSORS
+        </button>
+    </div>
+    <h2>Choose wisely!</h2>
+    <a href="">RESTART</a>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
